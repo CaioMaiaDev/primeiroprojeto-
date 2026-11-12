@@ -11,7 +11,8 @@ public class Leitura {
         System.out.println("Qual avaliação que você dá para o filme?");
         double avaliacao = leitura.nextDouble();
 
-        System.out.println("Seu filme favorito é: " + filme + " " + "que foi lançado no ano: " + anoDeLancamento);
-        System.out.println("A sua classificação para o filme:" + " " + avaliacao);
+        System.out.println(filme);
+        System.out.println(anoDeLancamento);
+        System.out.println(avaliacao);
     }
 }
