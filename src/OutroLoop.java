@@ -17,10 +17,8 @@ public class OutroLoop {
             }
         }
 
-        if (totalDeNotas == 0){
-            System.out.println("Obrigado! Até a proxima!");
-        } else {
+
             System.out.println("Media de avaliações " + mediaAvaliacao / totalDeNotas);
-        }
+
     }
 }
