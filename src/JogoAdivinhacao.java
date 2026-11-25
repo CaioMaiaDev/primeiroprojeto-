@@ -24,7 +24,7 @@ public class JogoAdivinhacao {
         }
 
         if (tentativas == 5 && palpite != numeroAleatorio) {
-            System.out.println("Sinto muito! Não foi dessa vez!");
+            System.out.println("Sinto muito! Você não conseguiu acertar o número em 5 tentativas. O número era: " + numeroAleatorio);
         }
     }
 }
