@@ -1,23 +1,34 @@
-
 import java.util.Scanner;
 
 public class Desafio {
     public static void main(String[] args) {
-        Scanner leitor = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite o primeiro número inteiro");
-        int numero1 = leitor.nextInt();
-        System.out.println("Digite o segundo número inteiro");
-        int numero2 = leitor.nextInt();
+        int escolha = 0;
 
-        if (numero1 == numero2) {
-            System.out.println("Os números são iguais");
-        } else if (numero1 > numero2) {
-            System.out.println("O primeiro número é maior!");
-        } else {
-            System.out.println("O segundo número é maior");
+        while (escolha != 3) {
+            System.out.println("-----Menu-----");
+            System.out.println("1. Calcular área do quadrado");
+            System.out.println("2. Calcular área do círculo");
+            System.out.println("3. Sair");
+            System.out.print("Escolha uma opção: ");
+            escolha = scanner.nextInt();
+
+            if (escolha == 1) {
+                System.out.print("Digite o lado do quadrado: ");
+                double lado = scanner.nextDouble();
+                double areaQuadrado = lado * lado;
+                System.out.println("Área do quadrado: " + areaQuadrado);
+            } else if (escolha == 2) {
+                System.out.print("Digite o raio do círculo: ");
+                double raio = scanner.nextDouble();
+                double areaCirculo = 3.14 * raio * raio;
+                System.out.println("Área do círculo: " + areaCirculo);
+            } else if (escolha == 3) {
+                System.out.println("Programa encerrado.");
+            } else {
+                System.out.println("Opção inválida. Tente novamente.");
+            }
         }
-
-
     }
 }
